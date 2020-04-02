@@ -1,5 +1,3 @@
-console.log("Client side JS file loaded")
-
 fetch("/weather?address=Athens,Greece").then((res) => {
     res.json().then((data) => {
         if(data.error) {
